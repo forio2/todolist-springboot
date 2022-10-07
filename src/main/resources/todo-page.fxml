@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.todo.controllerfe.AddItemController">
+   <children>
+      <Pane prefHeight="96.0" prefWidth="600.0" style="-fx-background-color: #0089FF;">
+         <children>
+            <Text layoutX="35.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Item" wrappingWidth="192.13671875">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="96.0" prefHeight="309.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="taskTextField" layoutX="79.0" layoutY="58.0" prefHeight="25.0" prefWidth="452.0" promptText="Add Task here" />
+            <TextField fx:id="desTextField" layoutX="79.0" layoutY="155.0" prefHeight="25.0" prefWidth="452.0" promptText="Description" />
+            <Text layoutX="79.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task" />
+            <Text layoutX="79.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+            <Button fx:id="addBtn" layoutX="538.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleAddBtn" text="Add" />
+            <Button fx:id="backBtn" layoutX="21.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
