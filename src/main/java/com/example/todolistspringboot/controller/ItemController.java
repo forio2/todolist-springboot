@@ -25,7 +25,7 @@ public class ItemController {
 
     @PostMapping("/add")
     public ResponseEntity<?> addItem(@RequestBody Item item) {
-        return ResponseEntity.ok(itemService.addItem(item.getUserItem().getId(), item));
+        return ResponseEntity.ok(itemService.addItem(item));
     }
 
     @PostMapping("/update")

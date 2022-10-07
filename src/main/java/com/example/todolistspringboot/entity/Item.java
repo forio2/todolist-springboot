@@ -15,7 +15,8 @@ public class Item {
     Long id;
     String description;
     @Enumerated(EnumType.STRING)
-    Status status;
+    @Builder.Default
+    Status status = Status.ACTIVE;
     Integer priority;
     @ManyToOne
     User userItem;

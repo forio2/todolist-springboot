@@ -8,6 +8,6 @@ import java.util.List;
 public interface ItemService {
     List<Item> getAllItems();
     Item getItem(Long id);
-    Item addItem(Long id, Item item);
+    Item addItem(Item item);
     Item updateItem(Long id, Item item);
 }

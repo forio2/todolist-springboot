@@ -25,9 +25,7 @@ public class ItemDaoImpl implements ItemDao {
     }
 
     @Override
-    public Item add(Item item) {
-        return itemRepository.save(item);
-    }
+    public Item add(Item item) { return itemRepository.save(item); }
 
     @Override
     public Item update(Item item) {
