@@ -32,7 +32,7 @@ public class ItemServiceImpl implements ItemService {
     public Item updateItem(Long id, Item item) {
         Item update = itemDao.getItemById(id);
         update.setDescription(item.getDescription());
-        update.setStatus(item.getStatus());
+        update.setPriority(item.getPriority());
         return itemDao.update(update);
     }
 }

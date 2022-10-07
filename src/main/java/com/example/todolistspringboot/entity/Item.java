@@ -14,8 +14,9 @@ public class Item {
     @EqualsAndHashCode.Exclude
     Long id;
     String description;
+    @Enumerated(EnumType.STRING)
     Status status;
-    Integer order;
+    Integer priority;
     @ManyToOne
     User userItem;
 }
