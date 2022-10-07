@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
 
 @Component
 public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
@@ -18,48 +20,33 @@ public class InitApp implements ApplicationListener<ApplicationReadyEvent> {
     ItemRepository itemRepository;
 
     @Override
+    @Transactional
     public void onApplicationEvent(ApplicationReadyEvent event) {
-//        User user1, user2, user3;
-        userRepository.save(
+        User user1, user2, user3;
+        user1 = userRepository.save(
                 User.builder()
                         .username("fax")
-
                         .build()
         );
-        userRepository.save(
+        user2 = userRepository.save(
                 User.builder()
                         .username("ohm")
                         .build()
         );
-        userRepository.save(
+        user3 = userRepository.save(
                 User.builder()
                         .username("next")
                         .build()
         );
-
-//        itemRepository.save(
-//                Item.builder()
-//                        .description("The first")
-//                        .status(Status.ACTIVE)
-//                        .order(1)
-//                        .userItem(user1)
-//                        .build()
-//        );
-//        itemRepository.save(
-//                Item.builder()
-//                        .description("The second")
-//                        .status(Status.COMPLETED)
-//                        .order(2)
-//                        .userItem(user2)
-//                        .build()
-//        );
-//        itemRepository.save(
-//                Item.builder()
-//                        .description("The third")
-//                        .status(Status.ACTIVE)
-//                        .order(3)
-//                        .userItem(user3)
-//                        .build()
-//        );
+        Item tempItem;
+        tempItem = itemRepository.save(
+                Item.builder()
+                        .description("The first")
+                        .status(Status.ACTIVE)
+                        .priority(1)
+                        .build()
+        );
+        tempItem.setUserItem(user1);
+        user1.getItemId().add(tempItem);
     }
 }

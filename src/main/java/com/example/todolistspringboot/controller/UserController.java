@@ -1,6 +1,5 @@
 package com.example.todolistspringboot.controller;
 
-import com.example.todolistspringboot.entity.User;
 import com.example.todolistspringboot.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

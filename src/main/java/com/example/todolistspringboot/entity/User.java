@@ -2,6 +2,7 @@ package com.example.todolistspringboot.entity;
 
 import lombok.*;
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -16,5 +17,6 @@ public class User {
     Long id;
     String username;
     @OneToMany(mappedBy = "userItem")
-    List<Item> itemId;
+    @Builder.Default
+    List<Item> itemId = new ArrayList<>();
 }

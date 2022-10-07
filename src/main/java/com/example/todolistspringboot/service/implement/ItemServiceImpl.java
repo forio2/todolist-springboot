@@ -42,7 +42,7 @@ public class ItemServiceImpl implements ItemService {
         if(user1 == null) throw new UserNotExists();
         Item update = itemDao.getItemById(id);
         update.setDescription(item.getDescription());
-        update.setStatus(item.getStatus());
+        update.setPriority(item.getPriority());
         return itemDao.update(update);
     }
 }
