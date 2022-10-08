@@ -38,8 +38,9 @@ public class TodoAPIService {
         restTemplate.postForObject(url, user, User.class);
     }
 
-    public void deleteItem(Item item){
-        String urlDelete = url +"checkout/" + item.getId();
-        restTemplate.delete(urlDelete, item, Item.class);
+    public List<Item> getAllItems(){
+        ResponseEntity<Item[]> response = restTemplate.getForEntity(url+"items", Item[].class);
+        Item[] items = response.getBody();
+        return Arrays.asList(items);
     }
 }

@@ -8,6 +8,11 @@ public class User {
     private String username;
     private List<Item> itemId;
 
+    public User (Long id, String username){
+        this.id = id;
+        this.username =username;
+    }
+
     public User(Long id, String username, List<Item> itemId) {
         this.id = id;
         this.username = username;

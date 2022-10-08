@@ -12,10 +12,10 @@ public class Item {
     private Integer order;
     private User userItem;
 
-    public Item(Long id, String description, Status status, Integer order, User userItem) {
+    public Item(Long id, String description, Integer order, User userItem) {
         this.id = id;
         this.description = description;
-        this.status = status;
+        this.status = Status.ACTIVE;
         this.order = order;
         this.userItem = userItem;
     }
