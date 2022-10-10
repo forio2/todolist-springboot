@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14057494-34ea-4efb-8e1e-c9fc9e5c44f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/TodoListApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/TodoListApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/TodoAPIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/TodoAPIService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/task.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/task.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +33,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -61,28 +48,39 @@
     </option>
   </component>
   <component name="ProjectId" id="2FrF5Ze1d6Rhm3466dJPfLkJ61J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/TodoFE",
-    "project.structure.last.edited": "Project",
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "D:/Accenture/todolist-springboot/src/main/java/com/example/todo/servicefe",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.47241378",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Accenture\todolist-springboot\src\main\java\com\example\todo\servicefe" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\demo\todolist-springboot\src\main\java" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="TodoListApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.todo.TodoListApplication" />
       <module name="todo" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Oracle\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml " />

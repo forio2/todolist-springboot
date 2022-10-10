@@ -8,7 +8,7 @@ public class User {
     private String username;
     private List<Item> itemId;
 
-    public User (Long id, String username){
+    public User (String username){
         this.id = id;
         this.username =username;
     }
@@ -18,6 +18,8 @@ public class User {
         this.username = username;
         this.itemId = itemId;
     }
+
+    public User(){}
 
     public Long getId() {
         return id;
