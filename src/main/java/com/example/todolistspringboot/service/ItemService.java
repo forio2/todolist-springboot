@@ -6,7 +6,7 @@ import com.example.todolistspringboot.entity.User;
 import java.util.List;
 
 public interface ItemService {
-    List<Item> getAllItems();
+    List<Item> getAllItems(Long id);
     Item getItem(Long id);
     Item addItem(Item item);
     Item updateItem(Long id, Item item);

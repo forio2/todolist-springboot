@@ -20,7 +20,9 @@ public class ItemServiceImpl implements ItemService {
     @Autowired
     UserDao userDao;
     @Override
-    public List<Item> getAllItems() {
+    public List<Item> getAllItems(Long id) {
+        User user1 = userDao.getUserById(id);
+        if(user1 == null) throw new UserNotExists();
         return itemDao.getAllItems();
     }
 
