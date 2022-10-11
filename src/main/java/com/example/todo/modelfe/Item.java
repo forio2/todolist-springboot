@@ -1,23 +1,25 @@
 package com.example.todo.modelfe;
 
+import com.example.todolistspringboot.entity.User;
+import lombok.*;
+import javax.persistence.*;
 
-enum Status {
-    ACTIVE, COMPLETED, DELETED
-        }
+
 public class Item {
-
     private Long id;
     private String description;
-    private Status status;
-    private Integer order;
+    private Status status = Status.ACTIVE;
+    private Integer priority;
     private User userItem;
 
-    public Item(Long id, String description, Integer order, User userItem) {
-        this.id = id;
+    public void Item (){
+
+    }
+
+    public Item(String description, Integer priority) {
         this.description = description;
         this.status = Status.ACTIVE;
-        this.order = order;
-        this.userItem = userItem;
+        this.priority = priority;
     }
 
     public Long getId() {
@@ -44,12 +46,12 @@ public class Item {
         this.status = status;
     }
 
-    public Integer getOrder() {
-        return order;
+    public Integer getPriority() {
+        return priority;
     }
 
-    public void setOrder(Integer order) {
-        this.order = order;
+    public void setPriority(Integer priority) {
+        this.priority = priority;
     }
 
     public User getUserItem() {

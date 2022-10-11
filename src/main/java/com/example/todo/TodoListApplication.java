@@ -12,7 +12,7 @@ import java.io.IOException;
 public class TodoListApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/home.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/task.fxml"));
         stage.setTitle("Todo Application");
         stage.setScene(new Scene(root));
         stage.setResizable(false);

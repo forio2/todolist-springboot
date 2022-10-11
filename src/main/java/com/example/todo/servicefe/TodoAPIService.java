@@ -2,6 +2,7 @@ package com.example.todo.servicefe;
 
 import com.example.todo.modelfe.Item;
 import com.example.todo.modelfe.User;
+import org.json.JSONObject;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
@@ -25,7 +26,7 @@ public class TodoAPIService {
     }
 
     public List<Item> getItem(){
-        ResponseEntity<Item[]> response = restTemplate.getForEntity(url+"items", Item[].class);
+        ResponseEntity<Item[]> response = restTemplate.getForEntity(url+"todo/inquiry", Item[].class);
         Item[] item = response.getBody();
         return Arrays.asList(item);
     }
@@ -35,12 +36,26 @@ public class TodoAPIService {
     }
 
     public void addUser(User user){
-        restTemplate.postForObject(url, user, User.class);
+        restTemplate.postForObject(url+"users", user, User.class);
     }
 
+    // Test
+    public String getJSONBody (){
+        String str = restTemplate.getForObject(url+"todo/inquiry", String.class);
+        return str;
+    }
+
+    public String createJSONStr(Long id, String username){
+        return "{ \"id\":"+ id + ", \"username\":" + username + "}";
+    }
+
+    // end Test
+
+
+    // need to find a way to sent JSON Body to GET Method @RequestMapping
     public List<Item> getAllItems(){
-        ResponseEntity<Item[]> response = restTemplate.getForEntity(url+"items", Item[].class);
-        Item[] items = response.getBody();
+        ResponseEntity<Item[]> responseItem = restTemplate.getForEntity(url+"todo/inquiry", Item[].class);
+        Item[] items = responseItem.getBody();
         return Arrays.asList(items);
     }
 }

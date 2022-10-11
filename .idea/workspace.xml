@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14057494-34ea-4efb-8e1e-c9fc9e5c44f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/RestControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/exceptions/UserNotExists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/TodoListApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/TodoListApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/ItemManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/ItemManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/TodoAPIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/TodoAPIService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/config/InitApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/config/InitApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/implement/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/implement/ItemServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +31,8 @@
       <list>
         <option value="package-info" />
         <option value="module-info" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -28,12 +42,16 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -62,7 +80,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/Accenture/todolist-springboot/src/main/java/com/example/todo/servicefe",
+    "last_opened_file_path": "D:/Accenture/todolist-springboot/src/main/java/com/example/todolistspringboot/entity",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.47241378",
@@ -71,13 +89,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Accenture\todolist-springboot\src\main\java\com\example\todolistspringboot\entity" />
+      <recent name="D:\Accenture\todolist-springboot\src\main\resources" />
       <recent name="D:\Accenture\todolist-springboot\src\main\java\com\example\todo\servicefe" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\demo\todolist-springboot\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TodoListApplication">
     <configuration name="TodoListApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -94,9 +114,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TodolistSpringbootApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.todolistspringboot.TodolistSpringbootApplication" />
+      <module name="todo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.todolistspringboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TodoListApplication" />
+        <item itemvalue="Application.TodolistSpringbootApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -110,5 +144,16 @@
       <updated>1665242117818</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

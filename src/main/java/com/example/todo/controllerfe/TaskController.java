@@ -3,6 +3,7 @@ package com.example.todo.controllerfe;
 
 import com.example.todo.configfe.ComponentConfig;
 import com.example.todo.modelfe.Item;
+import com.example.todo.modelfe.User;
 import com.example.todo.servicefe.ItemManagement;
 import com.example.todo.servicefe.TodoAPIService;
 import javafx.application.Platform;
@@ -58,22 +59,21 @@ public class TaskController {
     private TodoAPIService service;
     private ItemManagement itemManagement;
 
+    // Test user
+    private User user;
+
     public void setUsername(String name) { this.username = name;}
 
     @FXML
     public void initialize() {
-        // to be changed / checked when having data
         itemManagement = new ItemManagement();
         ApplicationContext context = new AnnotationConfigApplicationContext(ComponentConfig.class);
         service = context.getBean(TodoAPIService.class);
         itemManagement.setItemMapFromList(service.getAllItems());
 
-
-
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-                // right now should working fine but cant check coz of no mapping items
                 col_id.setCellValueFactory(new PropertyValueFactory<>("ID"));
                 col_desc.setCellValueFactory(new PropertyValueFactory<>("Description"));
                 col_status.setCellValueFactory(new PropertyValueFactory<>("Status"));
