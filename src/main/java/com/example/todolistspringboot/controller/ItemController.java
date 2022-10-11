@@ -15,7 +15,7 @@ public class ItemController {
     ItemService itemService;
 
     @GetMapping("/inquiry")
-    public ResponseEntity<?> showAllItems(@RequestBody User user) {
+    public ResponseEntity<?> showAllItems() {
         return ResponseEntity.ok(itemService.getAllItems());
     }
 

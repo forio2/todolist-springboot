@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14057494-34ea-4efb-8e1e-c9fc9e5c44f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/RestControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/exceptions/UserNotExists.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/TodoListApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/TodoListApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/controllerfe/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/modelfe/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/ItemManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/ItemManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/TodoAPIService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todo/servicefe/TodoAPIService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/config/InitApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/config/InitApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/implement/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/service/implement/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/todolistspringboot/repository/ItemRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +87,7 @@
       <recent name="D:\demo\todolist-springboot\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TodoListApplication">
+  <component name="RunManager" selected="Application.TodolistSpringbootApplication">
     <configuration name="TodoListApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -129,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TodoListApplication" />
         <item itemvalue="Application.TodolistSpringbootApplication" />
+        <item itemvalue="Application.TodoListApplication" />
       </list>
     </recent_temporary>
   </component>

@@ -1,6 +1,6 @@
 package com.example.todolistspringboot.entity;
 
-import com.example.todo.modelfe.Item;
+import com.example.todolistspringboot.entity.Item;
 import lombok.*;
 import javax.persistence.*;
 import java.util.ArrayList;

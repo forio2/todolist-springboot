@@ -1,7 +1,7 @@
 package com.example.todolistspringboot.config;
 
-import com.example.todo.modelfe.Item;
-import com.example.todo.modelfe.Status;
+import com.example.todolistspringboot.entity.Item;
+import com.example.todolistspringboot.entity.Status;
 import com.example.todolistspringboot.entity.User;
 import com.example.todolistspringboot.repository.ItemRepository;
 import com.example.todolistspringboot.repository.UserRepository;
